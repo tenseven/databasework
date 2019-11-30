@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学生登录</title>
+        <script type="text/javascript" src="signup.js"></script>
+        <script type="text/javascript" src="login.js"></script>
+        <style>
+            .list{text-align:center;float:left;list-style:none;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+            .div1{background-color: rgb(80, 82, 82);font-size:26px;padding-top:1%;padding-bottom:3%;}
+            .buttonsty{margin-top:5%;border-color:black;font-size:22px;border-radius:5px;color:white;background-color:rgb(65, 64, 64);}
+            .big_div{display: inline;}
+            .mid_div1{float:left;margin-left:36%;margin-top:6%;}
+            .mid_div2{float:left;margin-left:6%;margin-top:6%;}
+            .display_l{display:block;padding-top:12%;padding-left:36%;}
+            .display_2{display:none;padding-left:36%;margin-top:4%;}
+            .response_box{padding-left:36%;padding-top:2%;font-size:18px;color:red;}
+            .box{border-style: solid;margin-top:3%;margin-left:25%;margin-right: 25%;padding-bottom: 12%;padding-top:4%;}
+            
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="shouye.html">首页</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="admin_login.html">管理员登录</a>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="signup_login.html">学生登录</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="upwenjian.html">新书上架</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href></a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href></a></li>
+            </div>
+
+            <div  class="box">
+                <div class="big_div">
+                <div class="mid_div1">
+                <div id="login_border" style="font-size:170%;border-style:solid;border-radius: 5px;width:120%;text-align: center;border-color: black;" onmouseover="display_login();">登录</div>
+                </div>
+                <div class="mid_div2">
+                <div id="signup_border" style="font-size:170%;border-style:solid;border-radius: 5px;width:120%;text-align: center;border-color: white;" onmouseover="display_signup()";>注册</div>
+                </div>
+                </div>
+                <div id="change_login" class="display_l">
+                    <div>&nbsp&nbsp</div>
+                    <div style="font-size:140%;">账号   <input id="number" placeholder="学号"></div>
+                    <div>&nbsp&nbsp</div>
+                    <div>&nbsp&nbsp</div>
+                    <div>&nbsp&nbsp</div>
+                    <div style="font-size:140%;">密码  <input id="pwd" type=password></div>               
+                    <div>&nbsp&nbsp</div>
+                    <div><button id="input1" class="buttonsty" onclick="check()" onmouseover="button_ani('input1')" onmouseout="button_huanyuan('input1')">登录</button></div>
+                </div>
+                <div id="change_signup" class="display_2">
+                    <div>&nbsp&nbsp</div>
+                    <div style="font-size:140%;">账&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp号<input id="init_number"></div>
+                    <div>&nbsp&nbsp</div>
+                    <div style="font-size:140%;">输入密码 <input id="init_pwd" type=password></div>
+                    <div>&nbsp&nbsp</div>
+                    <div style="font-size:140%;">确认密码 <input id="second_pwd" type=password></div>
+                    <div>&nbsp&nbsp</div>
+                    <div><button id="input2" class="buttonsty" onclick="signupup()" onmouseover="button_ani()" onmouseout="button_huanyuan()">注册</button></div>
+                </div>
+                <div id="response_msg" class="response_box" ></div>
+
+            </div>
+        
+    </body>
+</html>
